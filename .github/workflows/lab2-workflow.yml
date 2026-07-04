@@ -21,4 +21,5 @@ jobs:
   job2:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Executing KodeKloud Lab 2"
+      - name: Printing Custom Message
+        run: echo ${{inputs.custom_message}}
